@@ -1,0 +1,2 @@
+print $NUMERO_DE_COLUMNA a desplegar
+ls -lstr *.txt | awk '{ print $0}'
