@@ -1,2 +1,9 @@
 print $NUMERO_DE_COLUMNA a desplegar
 ls -lstr *.txt | awk '{ print $0}'
+ls -1
+
+List only directories
+ls -ld */
+
+List all the matches with name staring with <Letter>
+ls -l l*
