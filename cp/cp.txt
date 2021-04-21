@@ -3,3 +3,10 @@ cp <file> <newfile>
 
 Copy a non empty folder
 cp -r <source> <destination>
+
+Copy only the updated files only
+cp -u file /destination
+
+Do not overwrite an existing file
+cp -n file /destination
+
