@@ -1,1 +1,11 @@
-.
+Create complex directory sturcture
+mkdir -p opt/lab01/{sub1,sub2} opt/lab02/{sub3,sub4}
+
+Create a directory and set peermissions
+mkdir -m 700 opt/shared
+
+Create a directory and set peermissions
+mkdir -m 700 -p -v opt/lab01/{sub1,sub2}
+
+Create a directory in verbose mode
+mkdir -m 700 -p -v opt/lab01/{sub1,sub2}
