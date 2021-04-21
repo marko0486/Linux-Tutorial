@@ -1,1 +1,5 @@
-.
+Copy a file and rename it. ( Make a backup)
+cp <file> <newfile>
+
+Copy a non empty folder
+cp -r <source> <destination>
