@@ -1,1 +1,8 @@
-.
+Delete a file
+rm <file>
+
+Delete the files interactively
+rm -i <file>
+
+Delete a directory recursively
+rm -r <dir>
