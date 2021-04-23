@@ -12,3 +12,6 @@ grep -n "[A-C]T" file.txt
 
 Starts with A between b and e and ends with t
 grep "A[b-e]t" ls2.txt
+
+Search for different words
+grep -E -i -w "Error|Warning|logs" file.txt
