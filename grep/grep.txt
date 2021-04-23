@@ -1,0 +1,2 @@
+See file in real-time and only look for “error” word
+tail -f ls2.txt | grep -i error
