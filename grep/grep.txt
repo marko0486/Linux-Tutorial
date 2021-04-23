@@ -1,2 +1,14 @@
 See file in real-time and only look for “error” word
-tail -f ls2.txt | grep -i error
+tail -f file.txt | grep -i error
+
+Every line that begins with a capital letter between A thru E
+grep "^[A-E]" file.txt
+
+Every line that ends with a capital letter between A thru E
+grep "^[A-E]" file.txt
+
+Between A-C and ends with T
+grep -n "[A-C]T" file.txt
+
+Starts with A between b and e and ends with t
+grep "A[b-e]t" ls2.txt
