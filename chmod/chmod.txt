@@ -1,1 +1,7 @@
-.
+Change permission to all the .txt files :
+u = rwx
+g = rw
+o = r
+
+chmod 764 *.txt
+chmod u=rwx,g=rw,o=r *.txtgrep
