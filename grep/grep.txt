@@ -15,3 +15,6 @@ grep "A[b-e]t" ls2.txt
 
 Search for different words
 grep -E -i -w "Error|Warning|logs" file.txt
+
+Find only words starting with some letters and ends with some letters
+grep "^[FG]oo" txt.txt
