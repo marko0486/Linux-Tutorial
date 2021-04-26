@@ -21,3 +21,10 @@ grep -E -i -w "Error|Warning|logs" file.txt
 
 Get all the processes containing XXXX
 ps aux | grep httpd
+
+Filter by Dates and hours in a log file
+awk -v start_day=2018/04/11 \
+-v stop_day=2018/04/11 \
+-v start_time=07:40 \
+-v stop_time=07:42 \
+'start_day <= $8 && $9 >= start_time && $8 <= stop_day && stop_time >= $9 ' console.log
