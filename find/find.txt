@@ -6,6 +6,12 @@ Find the files and folders of a specific user | Do not find files and folders of
 find ! -user <user> -ls
 find -user <user> -ls
 
+Find all the files modified in XX minutes
+Last 30 minutes :  find  -mmin -XX
+
+Find by size
+find -size +15000k
+
 Find all the .txt files that were modified between days and make a backup
 find -name "*.txt" -newermt 2021-04-27 ! -newermt 2021-04-28 -exec tar -cvzf Backup/MyBackup.tar.gz {} \;
 
@@ -13,5 +19,5 @@ find -name "*.txt" -newermt 2021-04-27 ! -newermt 2021-04-28 -exec tar -cvzf Bac
 -newermt can also accepts this format : -newermt "Apr 27, 2021"
 ******************************
 What is the size of the files
-by date  find . -type f -newermt 2021-04-27 -exec du -ch {} +
-by user  find . -type f -user hugo -exec du -ch {} +
+by date :  find . -type f -newermt 2021-04-27 -exec du -ch {} +
+by user : find . -type f -user hugo -exec du -ch {} +
