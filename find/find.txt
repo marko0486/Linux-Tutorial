@@ -9,6 +9,9 @@ find -user <user> -ls
 Find all the .txt files that were modified between days and make a backup
 find -name "*.txt" -newermt 2021-04-27 ! -newermt 2021-04-28 -exec tar -cvzf Backup/MyBackup.tar.gz {} \;
 
+******************************
+-newermt can also accepts this format : -newermt "Apr 27, 2021"
+******************************
 What is the size of the files
 by date  find . -type f -newermt 2021-04-27 -exec du -ch {} +
 by user  find . -type f -user hugo -exec du -ch {} +
