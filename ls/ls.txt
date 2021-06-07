@@ -4,6 +4,7 @@ ls -1
 
 List only directories
 ls -ld */
+ls -l | grep "^d"
 
 List all the matches with name staring with <Letter>
 ls -l l*
