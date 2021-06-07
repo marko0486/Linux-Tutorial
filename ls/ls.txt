@@ -1,5 +1,5 @@
 print $NUMERO_DE_COLUMNA a desplegar
-ls -lstr *.txt | awk '{ print $0}'
+ls -l *.txt | awk '{ print $9}'
 ls -1
 
 List only directories
